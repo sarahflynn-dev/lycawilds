@@ -67,10 +67,36 @@
 .lycalogo, .lycalogo svg {
     color: white !important;
     fill: white !important;
-    stroke: white !important;
-    width: 20%;
-    height: 20%;
+    stroke: white 0px !important;
+    /* width: 20%; */
+    /* height: 20%; */
 }
+/* Bootstrap Modifiers */
+.card-header {
+    color: #ffefd6;
+}
+
+.card, ul {
+    color: #ffefd6;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 0;
+    /* letter-spacing: 0; */
+    /* line-height: 200%; */
+    text-align: left;
+}
+
+hr {
+    border: none;
+    border-top: 1px dashed #ffefd6;
+    height: 0;
+}
+
+
+a { color: #ffefd6; }     /* Unvisited link */
+a:visited { color: #ffefd6; } /* Visited link */
+a:hover { color: #ff0000; } /* Mouse over link */
+a:active { color: #ffefd6; } /* Selected link */
 
 /* Template Content */
 .bee-row,
