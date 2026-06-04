@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} Login {% endblock %}
+
+<form method="post" class="w-100">
+    {% if form.non_field_errors %}
+    <div class="alert alert-danger pb-0 w-100" role="alert">
+        {{ form.non_field_errors }}
+    </div>
+    {% endif %}
+    <div class="form-group border-sm rounded p-3 m-3">
+        <h2 class="pb-3">Login</h2>
+        {% csrf_token %}
+        <p>
+            {{ form.username.label_tag }}
+            {{ form.username }}
+            {{ form.username.errors }}
+        </p>
+        <p>
+            {{ form.password.label_tag }}
+            {{ form.password }}
+            {{ form.password.errors }}
+        </p>
+        <button type="submit" class="btn btn-primary">Log in</button>
+    </div>
+</form>
